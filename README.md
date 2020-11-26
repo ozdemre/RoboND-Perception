@@ -4,7 +4,7 @@ This is my implementation for Udacity Robotics Software Engineer Nanodegree Prog
 
 **Description of Files**
 1. [YamlFiles](/RoboND-Perception-Project/pr2_robot/scripts/) : Output 1-2-3 .yaml file location.
-2. [object_recognition.py](RoboND-Perception/RoboND-Perception-Project/pr2_robot/scripts) Main Code where perception pipeline happens
+2. [object_recognition.py](./RoboND-Perception-Project/pr2_robot/scripts) Main Code where perception pipeline happens
 **Exercise 1 is implemented**
 
 Here, pipeline is:
