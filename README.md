@@ -76,7 +76,7 @@ Confidence Matrix: snacks:**%37** biscuits:%95 soap:%79 book:%95 eraser:%82 stic
 
 ![alt text][image8]
 
-**One additional note**: To generate output.yaml file names automatically, I modified the pick_and_place_project.launch file by adding one extra rosparam which states the world number
+**One additional note**: To generate output.yaml file names automatically, I modified the pick_and_place_project.launch file by adding one extra rosparam which states the world number.
 This ROS parameter is called inside of the object_recognition.py function to generate output_*.yaml file.
 
 **My Comments**
@@ -88,8 +88,10 @@ I will definitely try the challenge world and advanced pick and place operations
 
 ![alt text][image9]
 
+![alt text][image10]
+
   
-[image1]: ./readme_images/homogenous_transform.JPG
+[image1]: ./readme_images/clustering.JPG
 [image2]: ./readme_images/confusion_matrix.JPG
 [image3]: ./readme_images/world1.JPG
 [image4]: ./readme_images/world1_log_n.JPG
@@ -97,4 +99,5 @@ I will definitely try the challenge world and advanced pick and place operations
 [image6]: ./readme_images/world2_log_n.JPG
 [image7]: ./readme_images/world3.JPG
 [image8]: ./readme_images/world3_log_n.JPG
-[image9]: ./readme_images/realsense.jpg
+[image9]: ./readme_images/realsense.jpeg
+[image10]: ./readme_images/realsense.gif

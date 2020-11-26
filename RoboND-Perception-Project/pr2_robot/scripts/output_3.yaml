@@ -8,9 +8,9 @@ object_list:
       y: 0.0
       z: 0.0
     position:
-      x: 0.4393717646598816
-      y: 0.21429581940174103
-      z: 0.6847859025001526
+      x: 0.4393118619918823
+      y: 0.2143046259880066
+      z: 0.6849316954612732
   place_pose:
     orientation:
       w: 0.0
@@ -23,7 +23,7 @@ object_list:
       z: 0.8
   test_scene_num: 3
 - arm_name: left
-  object_name: sticky_notes
+  object_name: book
   pick_pose:
     orientation:
       w: 0.0
@@ -31,9 +31,9 @@ object_list:
       y: 0.0
       z: 0.0
     position:
-      x: 0.4393717646598816
-      y: 0.21429581940174103
-      z: 0.6847859025001526
+      x: 0.4909895658493042
+      y: 0.08319797366857529
+      z: 0.730097770690918
   place_pose:
     orientation:
       w: 0.0
@@ -45,8 +45,8 @@ object_list:
       y: 0.71
       z: 0.8
   test_scene_num: 3
-- arm_name: left
-  object_name: sticky_notes
+- arm_name: right
+  object_name: snacks
   pick_pose:
     orientation:
       w: 0.0
@@ -54,9 +54,55 @@ object_list:
       y: 0.0
       z: 0.0
     position:
-      x: 0.4393717646598816
-      y: 0.21429581940174103
-      z: 0.6847859025001526
+      x: 0.4294142723083496
+      y: -0.33226943016052246
+      z: 0.7601664066314697
+  place_pose:
+    orientation:
+      w: 0.0
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    position:
+      x: 0.0
+      y: -0.71
+      z: 0.8
+  test_scene_num: 3
+- arm_name: right
+  object_name: biscuits
+  pick_pose:
+    orientation:
+      w: 0.0
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    position:
+      x: 0.5868162512779236
+      y: -0.21808990836143494
+      z: 0.7050755023956299
+  place_pose:
+    orientation:
+      w: 0.0
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    position:
+      x: 0.0
+      y: -0.71
+      z: 0.8
+  test_scene_num: 3
+- arm_name: left
+  object_name: eraser
+  pick_pose:
+    orientation:
+      w: 0.0
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    position:
+      x: 0.6087294220924377
+      y: 0.2804698944091797
+      z: 0.6465089321136475
   place_pose:
     orientation:
       w: 0.0
@@ -68,8 +114,8 @@ object_list:
       y: 0.71
       z: 0.8
   test_scene_num: 3
-- arm_name: left
-  object_name: sticky_notes
+- arm_name: right
+  object_name: soap2
   pick_pose:
     orientation:
       w: 0.0
@@ -77,9 +123,9 @@ object_list:
       y: 0.0
       z: 0.0
     position:
-      x: 0.4393717646598816
-      y: 0.21429581940174103
-      z: 0.6847859025001526
+      x: 0.45367488265037537
+      y: -0.04358344152569771
+      z: 0.679172694683075
   place_pose:
     orientation:
       w: 0.0
@@ -88,11 +134,11 @@ object_list:
       z: 0.0
     position:
       x: 0.0
-      y: 0.71
+      y: -0.71
       z: 0.8
   test_scene_num: 3
-- arm_name: left
-  object_name: sticky_notes
+- arm_name: right
+  object_name: soap
   pick_pose:
     orientation:
       w: 0.0
@@ -100,9 +146,9 @@ object_list:
       y: 0.0
       z: 0.0
     position:
-      x: 0.4393717646598816
-      y: 0.21429581940174103
-      z: 0.6847859025001526
+      x: 0.6787549257278442
+      y: 0.003008680185303092
+      z: 0.6752614378929138
   place_pose:
     orientation:
       w: 0.0
@@ -111,11 +157,11 @@ object_list:
       z: 0.0
     position:
       x: 0.0
-      y: 0.71
+      y: -0.71
       z: 0.8
   test_scene_num: 3
 - arm_name: left
-  object_name: sticky_notes
+  object_name: glue
   pick_pose:
     orientation:
       w: 0.0
@@ -123,55 +169,9 @@ object_list:
       y: 0.0
       z: 0.0
     position:
-      x: 0.4393717646598816
-      y: 0.21429581940174103
-      z: 0.6847859025001526
-  place_pose:
-    orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
-    position:
-      x: 0.0
-      y: 0.71
-      z: 0.8
-  test_scene_num: 3
-- arm_name: left
-  object_name: sticky_notes
-  pick_pose:
-    orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
-    position:
-      x: 0.4393717646598816
-      y: 0.21429581940174103
-      z: 0.6847859025001526
-  place_pose:
-    orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
-    position:
-      x: 0.0
-      y: 0.71
-      z: 0.8
-  test_scene_num: 3
-- arm_name: left
-  object_name: sticky_notes
-  pick_pose:
-    orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
-    position:
-      x: 0.4393717646598816
-      y: 0.21429581940174103
-      z: 0.6847859025001526
+      x: 0.6121862530708313
+      y: 0.13964520394802094
+      z: 0.6843458414077759
   place_pose:
     orientation:
       w: 0.0

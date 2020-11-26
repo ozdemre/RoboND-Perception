@@ -211,7 +211,6 @@ def pr2_mover(object_list):
     centroid = []
     counter = 0
     output_yaml = []
-    # TODO: Get/Read parameters
 
     rospy.loginfo('Generating yaml file, however pick and place service will not be requested!')
 
@@ -252,7 +251,7 @@ def pr2_mover(object_list):
             offset += 1
 
     # Pick and Place Service Request is removed due to the lack of computer resources.
-    counter += 1
+        counter += 1
 
     # Output your request parameters into output yaml file
     send_to_yaml("output_" + str(world_id.data) + ".yaml", output_yaml)
