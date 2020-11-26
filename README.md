@@ -3,8 +3,8 @@
 This is my implementation for Udacity Robotics Software Engineer Nanodegree Program Perception project.
 
 **Description of Files**
-1. [YamlFiles](/RoboND-Perception-Project/pr2_robot/scripts/) : Output 1-2-3 .yaml file location.
-2. [object_recognition.py](./RoboND-Perception-Project/pr2_robot/scripts) Main Code where perception pipeline happens
+1. [YamlFiles](./RoboND-Perception-Project/pr2_robot/scripts) : Output 1-2-3 .yaml file location.
+2. [object_recognition.py](./RoboND-Perception-Project/pr2_robot/scripts/object_recognition.py) Main Code where perception pipeline happens
 **Exercise 1 is implemented**
 
 Here, pipeline is:
@@ -44,7 +44,7 @@ Success: 3/3
 
 Confidence Matrix: biscuits:%88 soap:%68 soap2:%94
 
-[Output_1.yaml](/RoboND-Perception-Project/pr2_robot/scripts/output_1.yaml)
+[Output_1.yaml](./RoboND-Perception-Project/pr2_robot/scripts/output_1.yaml)
 
 ![alt text][image3]
 
@@ -56,7 +56,7 @@ Success: 5/5
 
 Confidence Matrix: biscuits:%89 book:%96 soap:%69 soap2:%91 glue:%93
 
-[Output_2.yaml](/RoboND-Perception-Project/pr2_robot/scripts/output_2.yaml)
+[Output_2.yaml](./RoboND-Perception-Project/pr2_robot/scripts/output_2.yaml)
 
 
 ![alt text][image5]
@@ -69,7 +69,7 @@ Success: 8/8
 
 Confidence Matrix: snacks:**%37** biscuits:%95 soap:%79 book:%95 eraser:%82 stick_notes:%92 soap2:%95 glue:%91
 
-[Output_3.yaml](/RoboND-Perception-Project/pr2_robot/scripts/output_3.yaml)
+[Output_3.yaml](./RoboND-Perception-Project/pr2_robot/scripts/output_3.yaml)
 
 
 ![alt text][image7]
