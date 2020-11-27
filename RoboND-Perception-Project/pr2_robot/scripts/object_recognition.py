@@ -51,7 +51,6 @@ def send_to_yaml(yaml_filename, dict_list):
 
 # Callback function for your Point Cloud Subscriber
 def pcl_callback(pcl_msg):
-    # Exercise-2 TODOs:
 
     # Convert ROS msg to PCL data
     cloud = ros_to_pcl(pcl_msg)
@@ -140,7 +139,7 @@ def pcl_callback(pcl_msg):
     pcl_cluster_pub.publish(ros_cluster_cloud)
 
 
-    # Classify the clusters! (loop through each detected cluster one at a time)
+    # Classify the clusters!
     detected_objects_labels = []
     detected_objects = []
     confidence = []
@@ -183,9 +182,8 @@ def pcl_callback(pcl_msg):
     rospy.loginfo('Detected {} objects: {}'.format(len(detected_objects_labels), detected_objects_labels))
     detected_objects_pub.publish(detected_objects)
 
-    # TODO: Threshold for prediction confidence will be added i the future
-
-    # Now here we call the pr2_mover function to just output the .yaml files. In future I will take the
+    # TODO: Threshold for prediction confidence will be added in the future
+    # For now here we call the pr2_mover function to just output the .yaml files. In future I will take the
     # pick and place challenge and modify further
     try:
         pr2_mover(detected_objects)
@@ -200,7 +198,7 @@ def pr2_mover(object_list):
 
     # Initialize variables
     # world_id.data = 1 #used to do this manually,
-    # now world_id param is defined in the .launch file and we call it above
+    # now world_id param is defined in the pick_and_place_project.launch file and we call it above
 
     world_id = std_msgs.msg.Int32()
     world_id.data = test_scene_param
@@ -218,7 +216,7 @@ def pr2_mover(object_list):
     for target in object_list_param:
         object_name.data = object_list_param[counter]['name']
         found = False
-        # Get the PointCloud for a given object and obtain it's centroid
+        # Get the PointCloud for a given object and calculate centroid
         offset = 0
         for detected in object_list:
             if (object_name.data == detected.label):
@@ -234,7 +232,7 @@ def pr2_mover(object_list):
             pick_p.position.z = float(centroids[2])
 
             # Assign arm and place pose for object
-            # this is just a simple trick to avoid stacking. Not guaranteed to work in each case
+            # offset is just a simple trick to avoid stacking. Not guaranteed to work in each case
             place_p.position.x = 0.0 - (offset * 0.05)
             place_p.position.z = 0.8
 
@@ -261,8 +259,10 @@ if __name__ == '__main__':
 
     # ROS node initialization
     rospy.init_node('object_recognition', anonymous=True)
+
     # Create Subscribers
     pcl_sub = rospy.Subscriber("/pr2/world/points", pc2.PointCloud2, pcl_callback, queue_size=20)
+
     # Create Publishers
     pcl_objects_pub = rospy.Publisher("/pcl_objects", PointCloud2, queue_size=20)
     pcl_table_pub = rospy.Publisher("/pcl_table", PointCloud2, queue_size=20)

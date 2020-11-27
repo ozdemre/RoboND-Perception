@@ -6,7 +6,10 @@
 
   <rosparam command="load" file="$(find pr2_moveit)/config/grasp.yaml"/>
   <rosparam command="load" file="$(find pr2_robot)/config/dropbox.yaml"/>
+
+  <!--TODO:Change the world_id(1,2,3) to set parameter for ROS server-->
   <param name="world_id" type="int" value="3"/>
+
   <!--Launch a gazebo world-->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <!--TODO:Change the world name to load different tabletop setup-->
