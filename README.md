@@ -7,7 +7,7 @@ This is my implementation for Udacity Robotics Software Engineer Nanodegree Prog
 1. [yamlFiles](./RoboND-Perception-Project/pr2_robot/scripts) : output_*.yaml file location.
 2. [object_recognition.py](./RoboND-Perception-Project/pr2_robot/scripts/object_recognition.py) : Main Code where all the perception steps are implemented
 
-**Exercise 1 is implemented**
+**Exercise - 1 is implemented**
 
 Here, pipeline is:
 Statistical Outlier Filter->Voxel Grid Downsampling->Passthrough over x and z axis->RANSAC plane segmentation
@@ -15,7 +15,7 @@ Statistical Outlier Filter->Voxel Grid Downsampling->Passthrough over x and z ax
 Different from exercises I had to tune the parameters like Leaf size and Max Distance. It will be more difficult when I take the challenge world especially for passthrough filtering.
 I will not cover the basics here as they are quite clear from the lessons.
 
-**Exercise 2 is implemented**
+**Exercise - 2 is implemented**
 
 Clustering is applied here. I had to play with the Euclidean Clustering a bit. After couple of times accidentally clustering objects together I managed to tune the parameters.
 
@@ -23,7 +23,7 @@ Here is how point cloud looks like after clustering
 
 ![alt text][image1]
 
-**Exercise 3 is implemented**
+**Exercise - 3 is implemented**
 
 Here we implemented object recognition. Model training is done separately.
 
