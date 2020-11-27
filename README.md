@@ -1,17 +1,19 @@
-## RoboND-Perception
+## RoboND-Perception-Project
 
-This is my implementation for Udacity Robotics Software Engineer Nanodegree Program Perception project.
+This is my implementation for Udacity Robotics Software Engineer Nanodegree Program Perception project. You are reading the write-up report.
 
 **Description of Files**
-1. [YamlFiles](./RoboND-Perception-Project/pr2_robot/scripts) : Output 1-2-3 .yaml file location.
-2. [object_recognition.py](./RoboND-Perception-Project/pr2_robot/scripts/object_recognition.py) Main Code where perception pipeline happens
+
+1. [yamlFiles](./RoboND-Perception-Project/pr2_robot/scripts) : output_*.yaml file location.
+2. [object_recognition.py](./RoboND-Perception-Project/pr2_robot/scripts/object_recognition.py) : Main Code where all the perception steps are implemented
+
 **Exercise 1 is implemented**
 
 Here, pipeline is:
 Statistical Outlier Filter->Voxel Grid Downsampling->Passthrough over x and z axis->RANSAC plane segmentation
 
 Different from exercises I had to tune the parameters like Leaf size and Max Distance. It will be more difficult when I take the challenge world especially for passthrough filtering.
-
+I will not cover the basics here as they are quite clear from the lessons.
 
 **Exercise 2 is implemented**
 
@@ -31,6 +33,7 @@ My model training parameters:
 3. HSV for color histogram.
 
 I suggest to go higher especially for number of point clouds, but I got some satisfactory result and had lack of resources.
+Maybe doubling the object could increase some of the confidence values that I get.(soap and snacks, see below)
 
 Here is my confusion matrix.
 
