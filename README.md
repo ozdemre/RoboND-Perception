@@ -18,11 +18,6 @@ sudo chmod u+x object_recognition.py
 ./object_recognition
 ```
  
-Original Udacity repo launch file will not work for this case.
-clone the original repo from Udacity and follow the instructions.
-Copy the object_recognition.py and model.sav from his repo to 
-
-
 **Description of Files**
 
 1. [yamlFiles](./RoboND-Perception-Project/pr2_robot/scripts) : output_*.yaml file location.
