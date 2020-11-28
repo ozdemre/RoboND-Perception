@@ -2,6 +2,27 @@
 
 This is my implementation for Udacity Robotics Software Engineer Nanodegree Program Perception project. You are reading the write-up report.
 
+**Introductory Note**: In order to run this project, 
+
+1. Copy the Udacity original repo and follow the steps
+2. Replace `pick_place_project.launch` file with [this](./RoboND-Perception-Project/pr2_robot/launch/pick_place_project.launch) file.
+3. Copy `object_recognition.py` and `model.sav` from [here](./RoboND-Perception-Project/pr2_robot/scripts) to same folder you cloned.
+4. Open new terminal, source ROS and your workspace and then launch pick_place_project.launch file
+```bash
+roslaunch pr2_robot pick_place_project.launch
+```
+5. Open a new terminal, cd to `RoboND-Perception-Project/pr2_robot/scripts` folder, give executive permissions and run object_Recognition.py 
+```bash
+$ cd ~/catkin_ws/src/RoboND-Perception-Project/pr2_robot/scripts
+sudo chmod u+x object_recognition.py
+./object_recognition
+```
+ 
+Original Udacity repo launch file will not work for this case.
+clone the original repo from Udacity and follow the instructions.
+Copy the object_recognition.py and model.sav from his repo to 
+
+
 **Description of Files**
 
 1. [yamlFiles](./RoboND-Perception-Project/pr2_robot/scripts) : output_*.yaml file location.
@@ -79,7 +100,7 @@ Confidence Matrix: snacks:**%37** biscuits:%95 soap:%79 book:%95 eraser:%82 stic
 
 ![alt text][image8]
 
-**One additional note**: To generate output.yaml file names automatically, I modified the pick_and_place_project.launch file by adding one extra rosparam which states the world number.
+**One additional note**: To generate output.yaml file names automatically, I modified the pick_place_project.launch file by adding one extra rosparam which states the world number.
 This ROS parameter is called inside of the object_recognition.py function to generate output_*.yaml file.
 
 **My Comments**
